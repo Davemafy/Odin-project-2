@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pade</title>
+  <link rel="stylesheet" crossorigin href="/assets/index-FuEFz_XZ.css">
+</head>
+
+<body class="w-full grid bg-darkBlue overflow-x-hidden">
+    <header class="w-full p-6 bg-darkBlue text-midwhite">
+        <nav class="mx-auto max-w-screen-md flex items-center gap-2">
+            <div>
+                <h1>LOGO</h1>
+            </div>
+            <div id="menu-btn" class="hamburger-icon w-12 p-1 ml-auto bg-cyan-500 w-fit sm:hidden" aria-owns="menu" aria-expanded="false">
+                <img  class=" h-6 aspect-square invert" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%2024%2024'%3e%3cpath%20fill='currentColor'%20fill-rule='evenodd'%20d='M3%206h18v2H3V6Zm18%205H3v2h18v-2Zm0%205H3v2h18v-2Z'%20clip-rule='evenodd'/%3e%3c/svg%3e" height="100" width="100" alt="">
+            </div>
+            <ul class="ml-auto hidden sm:flex gap-6 " id="menu" role="navigation">
+                <li><a href="#" class="transition hover:opacity-[70] hover:text-cyan-300 ">Home</a></li>
+                <li><a href="#" class="transition hover:opacity-[70] hover:text-cyan-300 ">Pricing</a></li>
+                <li><a href="#" class="transition hover:opacity-[70] hover:text-cyan-300 ">About Us</a></li>
+            </ul>
+        </nav>
+        <section class="w-full py-12" id="hero-section">
+            <div class="mx-auto max-w-screen-md sm:flex sm:gap-4 ">
+                <div class="flex flex-col  flex-1  gap-4">
+                    <h1 class="text-[48px]  font-bold leading-[1.1]">This website is awesome</h1>
+                    <p class="font-light text-dimwhite">
+                        This website has some subtext that goes here under the main title.
+                        Its a smaller font and the color is of lower contrast
+                    </p>
+                    <a href="#" class="bg-midBlue text-white self-start py-2 px-4 rounded-lg">
+                        Sign Up
+                    </a>
+                </div>
+                <figure class="hidden sm:block flex-1 bg-stone-500">
+                    <img />
+                </figure>
+            </div>
+        </section>
+    </header>
+    <main class="bg-midwhite">
+        <section class="w-full text-center p-4 py-12">
+            <div class="mx-auto max-w-screen-md flex flex-col gap-6">
+                <h1 class="font-bold text-xl">Some Random Information.</h1>
+                <ul class=" mx-auto justify-center flex flex-wrap gap-7 w-full text-sm">
+                    <li class="flex-1 flex flex-col gap-3 min-w-[6rem] w-fit max-w-[7.25rem] ">
+                        <div class="h-30 aspect-square rounded-xl border-2 border-midBlue "></div>
+                        <p>this is some subject under an illustration or image</p>
+                    </li>
+                    <li class="flex-1 flex flex-col gap-3 min-w-[6rem] w-fit max-w-[7.25rem] ">
+                        <div class="h-30 aspect-square rounded-xl border-2 border-midBlue "></div>
+                        <p>this is some subject under an illustration or image</p>
+                    </li>
+                    <li class="flex-1 flex flex-col gap-3 min-w-[6rem] w-fit max-w-[7.25rem] ">
+                        <div class="h-30 aspect-square rounded-xl border-2 border-midBlue "></div>
+                        <p>this is some subject under an illustration or image</p>
+                    </li>
+                    <li class="flex-1 flex flex-col gap-3 min-w-[6rem] w-fit max-w-[7.25rem] ">
+                        <div class="h-30 aspect-square rounded-xl border-2 border-midBlue "></div>
+                        <p>this is some subject under an illustration or image</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="w-full px-6 sm:p-12 py-12 bg-dimwhite">
+            <div class="mx-auto max-w-screen-md flex flex-col justify-center items-baseline gap-6">
+                <em class="font-light font-sans font-italic text-2xl">
+                    This is an inspiring quote or a testimonial from a customer. Maybe it's just filling up the space,
+                    or maybe people will actually read it. Who knows? All I know is that it looks nice.
+                </em>
+                <p class="text-right w-full">-Thor, god of thunder</p>
+            </div>
+        </section>
+        <section class="w-full p-6 py-12">
+            <div class="mx-auto p-8  px-12 max-w-screen-md bg-midBlue rounded text-midwhite text-center sm:text-left sm:flex sm:gap-2 sm:flex-row sm:justify-center sm:items-end">
+                <div class="flex-1">
+                    <h2>Call to Action! It's time! </h2>
+                    <p class="text-dimwhite text-sm">Sign up for our product by clicking that button right over there!</p>
+                </div>
+                <div class="">
+                    <button class="border-2 rounded-lg text-sm  p-1 px-4 mt-4">Sign Up</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="w-full p-6 bg-darkBlue text-center text-midwhite">
+        <div>Copyright &copy; The Odin Project 2021</div>
+    </footer>
+    <script>
+       let menuBtn =  document.getElementById("menu-btn")
+       let menu =  document.getElementById("menu")
+       let menuImg =  document.querySelector("#menu-btn img")
+
+    
+        let clicked = false 
+
+       const toggleMenu = () => {
+            menu.classList.toggle("open")
+            if(clicked === true){
+                menu.setAttribute('aria-expanded', false)
+                clicked = false
+                menuImg.src = "./assets/images/menu.svg"
+                
+            }else{ 
+                menu.setAttribute('aria-expanded', true)
+                clicked = true
+                menuImg.src =  "./assets/images/close.svg"
+            }
+       }
+
+       menuBtn.addEventListener("click", toggleMenu)
+    </script>
+</body>
+
+</html>

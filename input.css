@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../assets/fonts/roboto.woff2");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Graphic";
+    src: url("../assets/fonts/graphik_regular.woff") format("truetype");
+    font-weight: normal;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Graphic";
+    src: url("../assets/fonts/graphik_medium.woff") format("truetype");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Graphic";
+    src: url("../assets/fonts/graphik_semibold.woff2") format("truetype");
+    font-display: swap;
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Boing";
+    src: url("../assets/fonts/boing_semibold_web.woff") format("truetype");
+    font-display: swap;
+    font-weight: 600;
+}
+
+:root {
+    font-family: "Graphic", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*{
+	/* background:  #b8ff8804 ; */
+}
+
+h1, h2 , h3 ,h4, p{
+	text-wrap: balance ;
+}
+
+a{
+    position: relative;
+}
+
+a::before{
+    content: "";
+    height: .12rem;
+    border-radius: 1rem;
+    width: 0%;
+    opacity: 0;
+    position: absolute;
+    bottom: -.4rem;
+    left: 0;
+    transition: 250ms;
+    background: #fff;
+    --tw-bg-opacity: 1;
+    background-color: rgb(103 232 249 / var(--tw-bg-opacity));
+}
+
+a:hover::before {
+  width: 100%;
+  opacity: 1;
+}
