@@ -17,6 +17,9 @@ export default {
               dimwhite: "#E5E7EB ",
               midBlue: "#3882F6 ",
               midDarkBlue: "#1F2937 ",
+
+              mediumpurple: "mediumpurple",
+              dark: "#222",
               
               prussianBlue: "#0d283d ",
               oxfordBlue: "#011931",
