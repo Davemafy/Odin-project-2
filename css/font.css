@@ -9,83 +9,124 @@ body {
       text-rendering: geometricPrecision;
     }
   }
+
+  @font-face {
+    font-family: "Roboto";
+    src: url("../assets/fonts/roboto.woff2");
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: "Graphic";
+    src: url("../assets/fonts/graphik_regular.woff") format("truetype");
+    font-weight: normal;
+    font-display: swap;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Graphic";
+    src: url("../assets/fonts/graphik_medium.woff") format("truetype");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Boing";
+    src: url("../assets/fonts/boing_semibold_web.woff") format("truetype");
+    font-display: swap;
+    font-weight: 600;
+  }
+  
+  
+  @font-face {
+    font-family: "Graphic";
+    src: url("../assets/fonts/boing_semibold_web.woff") format("truetype");
+    font-display: swap;
+    font-weight: 600;
+  }  
   
   @font-face {
     font-family: 'babylonica';
-    src: url('google fonts/babylonica/Babylonica-Regular.ttf') format('truetype');
+    src: url('../assets/google fonts/babylonica/Babylonica-Regular.ttf') format('truetype');
   }
   
   @font-face {
     font-family: 'fredericathegreat';
-    src: url('google fonts/fredericathegreat/FrederickatheGreat-Regular.ttf') format('truetype');
+    src: url('../assets/google fonts/fredericathegreat/FrederickatheGreat-Regular.ttf') format('truetype');
   }
   
   @font-face {
     font-family: 'FredokaOne';
-    src: url('google fonts/FredokaOne/FredokaOne-Regular.ttf') format('truetype');
+    src: url('../assets/google fonts/FredokaOne/FredokaOne-Regular.ttf') format('truetype');
   }
   
   @font-face {
     font-family: 'Inter';
-    src: url('google fonts/Inter/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+    src: url('../assets/google fonts/Inter/Inter-VariableFont_slnt,wght.ttf') format('truetype');
   }
   
   @font-face {
     font-family: 'Karla';
-    src: url('google fonts/Karla/Karla-VariableFont_wght.ttf') format('truetype');
+    src: url('../assets/google fonts/Karla/Karla-VariableFont_wght.ttf') format('truetype');
   }
   
   @font-face {
     font-family: 'Lato';
-    src: url('google fonts/Lato/Lato-Regular.ttf') format('truetype');
+    src: url('../assets/google fonts/Lato/Lato-Regular.ttf') format('truetype');
   }
   
   @font-face {
     font-family: 'Montserrat';
-    src: url('google fonts/montserrat /Montserrat-VariableFont_wght.ttf') format('truetype');
+    src: url('../assets/google fonts/montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
   }
   
   
   @font-face {
     font-family: 'OpenSans';
-    src: url('google fonts/openSans/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+    src: url('../assets/google fonts/openSans/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
   }
   
   @font-face {
     font-family: 'Oswald';
-    src: url('google fonts/Oswald/Oswald-VariableFont_wght.ttf') format('truetype');
+    src: url('../assets/google fonts/Oswald/Oswald-VariableFont_wght.ttf') format('truetype');
   }
   
   @font-face {
     font-family: 'Quicksand';
-    src: url('google fonts/Quicksand /Quicksand-VariableFont_wght.ttf') format('truetype');
+    src: url('../assets/google fonts/Quicksand /Quicksand-VariableFont_wght.ttf') format('truetype');
   }
   
   @font-face {
     font-family: 'Poppins';
-    src: url('google fonts/poppins/Poppins-Regular.ttf') format('truetype');
+    src: url('../assets/google fonts/poppins/Poppins-Regular.ttf') format('truetype');
   }
   
   @font-face {
     font-family: 'Roboto';
-    src: url('google fonts/roboto/Roboto-Regular.ttf') format('truetype');
+    src: url('../assets/google fonts/roboto/Roboto-Regular.ttf') format('truetype');
   }
   
   @font-face {
     font-family: 'SassyFrass';
-    src: url('google fonts/SassyFrass/SassyFrass-Regular.ttf') format('truetype');
+    src: url('../assets/google fonts/SassyFrass/SassyFrass-Regular.ttf') format('truetype');
   }
   
   @font-face {
     font-family: 'Ubuntu';
-    src: url('google fonts/ubuntu/Ubuntu-Regular.ttf') format('truetype');
+    src: url('../assets/google fonts/ubuntu/Ubuntu-Regular.ttf') format('truetype');
   }
   
   @font-face {
     font-family: 'rubik';
-    src: url('google fonts/rubik/Rubik-VariableFont_wght.ttf') format('truetype');
+    src: url('../assets/google fonts/rubik/Rubik-VariableFont_wght.ttf') format('truetype');
   }
-  
+
+  @font-face {
+    font-family: "Roboto";
+    src: url("../assets/fonts/roboto.woff2");
+    font-weight: 300;
+  }
   
   .babylonica {
     font-family: babylonica;

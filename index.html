@@ -5,69 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FontApi</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/font.css" />
   </head>
 
-  <body class="bg-white grid dark:bg-dark text-white">
+  <body class="bg-[#f4f4f4] text-dark grid">
+    <!-- Header Section -->
     <header
-      class="bg-slate-100 border-b-[2px] border-slate-200  dark:bg-slate-300 flex flex-col items-center px-6 py-2.5"
+      class="border-2 z-10 bg-white absolute top-4 left-[10%]  w-[80%]  rounded-full border-slate-20 flex flex-col items-center px-2.5 py-2.5"
     >
-      <nav class="w-full flex justify-center items-center gap-6">
-        <ul
-          class="hidden w-full flex-[1.5] md:flex gap-[inherit] items-center px-2"
-        >
+      <nav class="w-full flex justify-center items-center gap-6 ">
+        <!-- Buttons List -->
+        <ul class="hidden w-fit md:flex gap-[inherit] items-center px-2 sm:px-4">
           <li class="">
             <button
-              class="bg-slate-200 dark:bg-[] w-full text-mediumpurple text-center rounded-full p-2 px-8 text-sm"
+              class="flex gap-2 items-center bg-[#454545] text-[#f4f4f4] border border-slate-200 w-full text-center rounded-full p-2.5 px-6 text-sm"
             >
-              Switch mode
+              <p class="text-sm font-bold">Switch mode</p>
+              <svg
+                class="h-[1.5em] w-[1.5em] transition"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none" />
+                <path
+                  d="M210.69,158.18A96.78,96.78,0,0,1,192,160,96.08,96.08,0,0,1,97.82,45.31,88,88,0,1,0,210.69,158.18Z"
+                  opacity="0.2"
+                />
+                <line
+                  x1="208"
+                  y1="120"
+                  x2="208"
+                  y2="72"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                />
+                <line
+                  x1="232"
+                  y1="96"
+                  x2="184"
+                  y2="96"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                />
+                <line
+                  x1="160"
+                  y1="32"
+                  x2="160"
+                  y2="64"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                />
+                <line
+                  x1="176"
+                  y1="48"
+                  x2="144"
+                  y2="48"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                />
+                <path
+                  d="M210.69,158.18A96.78,96.78,0,0,1,192,160,96.08,96.08,0,0,1,97.82,45.31,88,88,0,1,0,210.69,158.18Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                />
+              </svg>
             </button>
           </li>
           <li class="">
             <button
-              class="bg-slate-200 dark:bg-[] w-full text-mediumpurple text-center rounded-full p-2 px-8 text-sm"
+              class="flex gap-2 items-center group border border-slate-200 w-full text-center rounded-full p-2.5 px-6 text-sm"
             >
-              Test font
+              <p class="text-sm font-bold">Test font</p>
+              <svg
+                class="h-[1.5em] w-[1.5em] group-hover:rotate-180 transition"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none" />
+                <path
+                  d="M128,32a96,96,0,1,0,96,96A96,96,0,0,0,128,32Zm16,112L80,176l32-64,64-32Z"
+                  opacity="0.2"
+                />
+                <circle
+                  cx="128"
+                  cy="128"
+                  r="96"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-miterlimit="10"
+                  stroke-width="16"
+                />
+                <polygon
+                  points="176 80 112 112 80 176 144 144 176 80"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                />
+              </svg>
             </button>
           </li>
         </ul>
-        <div class="grid w-full flex-[3] bg-[#f5f5f5]  rounded-full px-4 group hover:shadow-2xl transition duration-50">
+        <!-- Input Container -->
+        <div
+          class="grid w-full flex-[3] rounded-full px-4 group hover:shadow-2xl transition duration-50"
+        >
+          <!-- Input -->
           <input
-            class="bg-slate-200 max-w-screen-md outline-none border-none group-hover:shadow-2xl group-focus:shadow-2xl group-active:shadow-2xl hover:scale-105 focus:scale-105 active:scale-105 transition duration-100 text-dark dark:bg-[#2221] rounded-full p-2.5 px-4 text-sm"
+            class="bg-slate-200 font-[inherit] w-full border-2 placeholder:text-sm placeholder:font-bold  group-hover:shadow-2xl group-focus:shadow-2xl group-active:shadow-2xl hover:scale-105 focus:scale-105 active:scale-105 transition duration-100 text-dark dark:bg-[#2221] rounded-full p-2.5 px-4 text-sm"
             id="testInput"
             type="text"
-            placeholder="Search for fonts.."
+            placeholder="Type here to try a font."
           />
         </div>
+        <!-- Hamburger icon only displays in smaller screen -->
         <button class="md:hidden" role="button">
           <img
             class="h-full w-full max-h-10 max-w-8 object-cover p-0.5"
-            src="./assets/images/menu.svg"
+            src="./assets/icons/menu.svg"
             height="40"
             width="40"
             alt="menu"
           />
         </button>
-        <ul
-          class="hidden w-full flex-[1.5]  md:flex gap-[inherit] items-center justify-end"
-        >
+        <!-- Buttons List -->
+        <ul class="hidden w-fit md:flex gap-[inherit] items-center justify-end">
           <li class="">
             <button
-              class="bg-slate-300 dark:bg-[#8617ee] hover:bg-[#8a0cff] w-full text-center rounded-lg p-2 px-8 text-sm"
+              class="border w-full text-center rounded-full p-2 px-8 text-sm bg-dark text-[#f4f4f4]"
               id="save"
-              >
-              Save
-            </button>
-          </li>
-          <li class="">
-            <button
-              class="bg-slate-200 dark:bg-[] w-full text-mediumpurple text-center rounded-full p-2 px-8 text-sm"
             >
-              Switch mode
+              Save
             </button>
           </li>
         </ul>
       </nav>
-      <section class="hidden bg-red-200" id="filterBar">
+      <!-- <section class=" bg-red-200" id="filterBar">
         <div>
           <button>
             <svg
@@ -114,94 +203,149 @@
             </button>
           </li>
         </ul>
-      </section>
+      </section> -->
     </header>
-    <main class="w-full grid bg-slae-100  bg-slate-300">
-      <div class="flex flex-wrap gap- border-red-400 justify-between p-8 mask-bottom text-section">
-        <section class="flex-1 rounded-xl gap-6 px-4 shadow-2xl text-container">
-          <div class="text-box shadow-2xl font-semibold bg-mediumpurple bg-slate-50 text-[#777] border-4 py-3 px-4 rounded-xl">
-            <div class="font-name">Montserrat</div>
-            <div class="output min-h-20"></div>
+    <!-- Main Section  -->
+    <main class="w-full  grid">
+      <!-- Font Section  -->
+      <div class=" flex justify-between mask-bottom text-section">
+        <!-- Flex Container -->
+        <section class="flex-1 rounded-xl p-16 pt-36 gap-4  text-container">
+          <!-- Text Box --(Montserrat) -->
+          <div class="text-box">
+            <div class="">
+              <h2 id="font-name" class="text-2xl mb-4 font-semibold font-graph">
+                Montserrat
+              </h2>
+            </div>
+            <p class="output text-lg text-light montserrat">
+              The quick brown fox jumps over the lazy dog.
+            </p>
           </div>
-          <div class="text-box shadow-2xl font-semibold bg-mediumpurple bg-slate-50 text-[#777] border-4 py-3 px-4 rounded-xl">
-            <div class="font-name">Montserrat</div>
-            <div class="output min-h-20"></div>
+          <!-- Text Box --(Ubuntu) -->
+          <div class="text-box">
+            <div class="">
+              <h2 id="font-name" class="text-2xl ubuntu mb-4 font-semibold font-graph">
+                Ubuntu
+              </h2>
+            </div>
+            <p class="output text-lg text-light ubuntu">
+              The quick brown fox jumps over the lazy dog.
+            </p>
           </div>
-          <div class="text-box shadow-2xl font-semibold bg-mediumpurple bg-slate-50 text-[#777] border-4 py-3 px-4 rounded-xl">
-            <div class="font-name">Montserrat</div>
-            <div class="output min-h-20"></div>
+          <!-- Text Box --(Poppins) -->
+          <div class="text-box">
+            <div class="">
+              <h2 id="font-name" class="text-2xl poppins mb-4 font-semibold font-graph">
+                Poppins
+              </h2>
+            </div>
+            <p class="output text-lg text-light poppins">
+              The quick brown fox jumps over the lazy dog.
+            </p>
           </div>
-          <div class="text-box shadow-2xl font-semibold bg-mediumpurple bg-slate-50 text-[#777] border-4 py-3 px-4 rounded-xl">
-            <div class="font-name">Montserrat</div>
-            <div class="output min-h-20"></div>
+          <!-- Text Box --(Lato) -->
+          <div class="text-box">
+            <div class="">
+              <h2 id="font-name" class="text-2xl lato mb-4 font-semibold font-graph">
+                Lato
+              </h2>
+            </div>
+            <p class="output text-lg text-light lato">
+              The quick brown fox jumps over the lazy dog.
+            </p>
           </div>
-          <div class="text-box shadow-2xl font-semibold bg-mediumpurple bg-slate-50 text-[#777] border-4 py-3 px-4 rounded-xl">
-            <div class="font-name">Montserrat</div>
-            <div class="output min-h-20"></div>
+          <!-- Text Box --(Karla) -->
+          <div class="text-box">
+            <div class="">
+              <h2
+                id="font-name"
+                class="text-2xl mb-4 lato font-semibold font-graph"
+              >
+                Karla
+              </h2>
+            </div>
+            <p class="output text-lg text-light karla">
+              The quick brown fox jumps over the lazy dog.
+            </p>
           </div>
-          <div class="text-box shadow-2xl font-semibold bg-mediumpurple bg-slate-50 text-[#777] border-4 py-3 px-4 rounded-xl">
-            <div class="font-name">Montserrat</div>
-            <div class="output min-h-20"></div>
+          <!-- Text Box --(Inter) -->
+          <div class="text-box">
+            <div class="">
+              <h2 id="font-name" class="text-2xl inter mb-4 font-semibold font-graph">
+                Inter
+              </h2>
+            </div>
+            <p class="output text-lg text-light inter">
+              The quick brown fox jumps over the lazy dog.
+            </p>
           </div>
-          <div class="text-box shadow-2xl font-semibold bg-mediumpurple bg-slate-50 text-[#777] border-4 py-3 px-4 rounded-xl">
-            <div class="font-name">Montserrat</div>
-            <div class="output min-h-20"></div>
+          <!-- Text Box --(Roboto) -->
+          <div class="text-box">
+            <div class="">
+              <h2
+                id="font-name"
+                class="text-2xl roboto mb-4 font-semibold font-graph"
+              >
+                Roboto
+              </h2>
+            </div>
+            <p class="output text-lg text-light roboto">
+              The quick brown fox jumps over the lazy dog.
+            </p>
           </div>
-          <div class="text-box shadow-2xl font-semibold bg-mediumpurple bg-slate-50 text-[#777] border-4 py-3 px-4 rounded-xl">
-            <div class="font-name">Montserrat</div>
-            <div class="output min-h-20"></div>
+          <!-- Text Box --(babylonica) -->
+          <div class="text-box">
+            <div class="">
+              <h2
+                id="font-name"
+                class="text-2xl babylonica mb-4 font-semibold font-graph"
+              >
+                Babylonica
+              </h2>
+            </div>
+            <p class="output text-lg text-light babylonica">
+              The quick brown fox jumps over the lazy dog.
+            </p>
           </div>
-          <div class="text-box shadow-2xl font-semibold bg-mediumpurple bg-slate-50 text-[#777] border-4 py-3 px-4 rounded-xl">
-            <div class="font-name">Montserrat</div>
-            <div class="output min-h-20"></div>
+          <!-- Text Box --(Frederica the great) -->
+          <div class="text-box">
+            <div class="">
+              <h2
+                id="font-name"
+                class="text-2xl fredericathegreat mb-4 font-semibold font-graph"
+              >
+                Frederica the great
+              </h2>
+            </div>
+            <p class="output text-lg text-light fredericathegreat">
+              The quick brown fox jumps over the lazy dog.
+            </p>
           </div>
-          <div class="text-box shadow-2xl font-semibold bg-mediumpurple bg-slate-50 text-[#777] border-4 py-3 px-4 rounded-xl">
-            <div class="font-name">Poppins</div>
-            <div class="output min-h-20 min-w-16"></div>
+          <!-- Text Box --(Sassyfrass) -->
+          <div class="text-box">
+            <div class="">
+              <h2
+                id="font-name"
+                class="text-4xl sassyfrass mb-4 font-semibold font-graph"
+              >
+                Sassyfrass
+              </h2>
+            </div>
+            <p class="output text-xl sassyfrass">
+              The quick brown fox jumps over the lazy dog.
+            </p>
           </div>
-          <div class="text-box shadow-2xl font-semibold bg-mediumpurple bg-slate-50 text-[#777] border-4 py-3 px-4 rounded-xl">
-            <div class="font-name">Poppins</div>
-            <div class="output min-h-20 min-w-16"></div>
-          </div>
-          <div class="text-box shadow-2xl font-semibold bg-mediumpurple bg-slate-50 text-[#777] border-4 py-3 px-4 rounded-xl">
-            <div class="font-name">Poppins</div>
-            <div class="output min-h-20 min-w-16"></div>
-          </div>
-          <div class="text-box shadow-2xl font-semibold bg-mediumpurple bg-slate-50 text-[#777] border-4 py-3 px-4 rounded-xl">
-            <div class="font-name">OpenSans</div>
-            <div class="output min-h-20 min-w-16"></div>
-          </div>
-          <div class="text-box shadow-2xl font-semibold bg-mediumpurple bg-slate-50 text-[#777] border-4 py-3 px-4 rounded-xl">
-            <div class="font-name">OpenSans</div>
-            <div class="output min-h-20 min-w-16"></div>
-          </div>
-          <div class="text-box shadow-2xl font-semibold bg-mediumpurple bg-slate-50 text-[#777] border-4 py-3 px-4 rounded-xl">
-            <div class="font-name">OpenSans</div>
-            <div class="output min-h-20 min-w-16"></div>
-          </div>
-          <div class="text-box shadow-2xl font-semibold bg-mediumpurple bg-slate-50 text-[#777] border-4 py-3 px-4 rounded-xl">
-            <div class="font-name">Ubuntu</div>
-            <div class="output min-h-20 min-w-16"></div>
-          </div>
-          <div class="text-box shadow-2xl font-semibold bg-mediumpurple bg-slate-50 text-[#777] border-4 py-3 px-4 rounded-xl">
-            <div class="font-name">Ubuntu</div>
-            <div class="output min-h-20 min-w-16"></div>
-          </div>
-          <div class="text-box shadow-2xl font-semibold bg-mediumpurple bg-slate-50 text-[#777] border-4 py-3 px-4 rounded-xl">
-            <div class="font-name">Ubuntu</div>
-            <div class="output min-h-20 min-w-16"></div>
-          </div>
-          <div class="text-box shadow-2xl font-semibold bg-mediumpurple bg-slate-50 text-[#777] border-4 py-3 px-4 rounded-xl">
-            <div class="font-name">Ubuntu</div>
-            <div class="output min-h-20 min-w-16"></div>
-          </div>
-          <div class="text-box shadow-2xl font-semibold bg-mediumpurple bg-slate-50 text-[#777] border-4 py-3 px-4 rounded-xl">
-            <div class="font-name">Ubuntu</div>
-            <div class="output min-h-20 min-w-16"></div>
-          </div>
-          <div class="text-box shadow-2xl font-semibold bg-mediumpurple bg-slate-50 text-[#777] border-4 py-3 px-4 rounded-xl">
-            <div class="font-name">Ubuntu</div>
-            <div class="output min-h-20 min-w-16"></div>
+          <!-- Text Box --(OpenSans) -->
+          <div class="text-box">
+            <div class="">
+              <h2 id="font-name" class="text-2xl openSans mb-4 font-semibold font-graph">
+                OpenSans
+              </h2>
+            </div>
+            <p class="output text-lg text-light openSans">
+              The quick brown fox jumps over the lazy dog.
+            </p>
           </div>
         </section>
       </div>
@@ -217,5 +361,6 @@
         </div>
       </section>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
